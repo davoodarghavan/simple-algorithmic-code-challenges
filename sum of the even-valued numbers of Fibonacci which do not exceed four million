@@ -1,0 +1,10 @@
+even= 0
+odd= 1
+total = 0
+while odd < 4000000:
+    even, odd = odd, even + odd
+    if even % 2:
+        continue
+    total += even
+print('sum of the even-valued numbers of Fibonacci which do not exceed four million is:')
+print(total)
